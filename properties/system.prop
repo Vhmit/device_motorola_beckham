@@ -13,6 +13,10 @@ dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemservercompilerfilter=speed 
 dalvik.vm.systemuicompilerfilter=speed
 
+# Fling velocities
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # Misc
 debug.force_no_blanking=true
 
