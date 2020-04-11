@@ -82,3 +82,6 @@
 
 # tombstones
 /data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
+
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
