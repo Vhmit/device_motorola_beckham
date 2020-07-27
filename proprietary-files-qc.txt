@@ -345,6 +345,9 @@ vendor/lib64/libhdr_tm.so
 # IPA
 vendor/bin/ipacm-diag
 
+# IRQ balance - from LA.UM.8.2.r1-06700-sdm660.0
+vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
+
 # Listen
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
