@@ -8,6 +8,9 @@ use.voice.path.for.pcm.voip=false
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Misc
 debug.force_no_blanking=true
 
