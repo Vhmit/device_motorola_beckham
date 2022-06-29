@@ -230,6 +230,7 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.beckham.rc \
     init.mmi.ramdump.rc \
     init.mmi.usb.rc \
