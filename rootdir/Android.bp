@@ -3,7 +3,8 @@
 prebuilt_etc {
     name: "fstab.qcom",
     src: "etc/fstab.qcom",
-    soc_specific: true,
+    vendor: true,
+    ramdisk_available: true,
 }
 
 prebuilt_etc {
