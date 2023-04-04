@@ -236,7 +236,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
     init.beckham.rc \
-    init.mmi.ramdump.rc \
     init.mmi.usb.rc \
     init.moto.rc \
     init.power.rc \
