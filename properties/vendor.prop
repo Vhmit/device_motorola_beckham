@@ -144,6 +144,9 @@ ro.vendor.audio.sdk.fluencetype=none
 # Mods
 sys.mod.platformsdkversion=281
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
