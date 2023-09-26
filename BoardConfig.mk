@@ -136,6 +136,7 @@ VENDOR_SECURITY_PATCH := 2021-02-01
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/dolby \
     $(DEVICE_PATH)/sepolicy/vendor \
     $(DEVICE_PATH)/sepolicy-mods/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
