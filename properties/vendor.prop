@@ -18,8 +18,8 @@ persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Handset_cal.acdb
 persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb
 persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=true
 vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -83,6 +83,10 @@ vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio_hal.period_size=240
 vendor.voice.path.for.pcm.voip=false
+
+# Audio (Dolby)
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -154,6 +158,7 @@ ro.apk_verity.mode=2
 ro.oem_unlock_supported=1
 
 # OMX
+debug.stagefright.omx_default_rank.sw-audio=16
 debug.stagefright.omx_default_rank=0
 
 # Perf
