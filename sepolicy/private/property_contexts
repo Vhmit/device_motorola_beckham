@@ -1,0 +1,3 @@
+# Fling
+ro.max.fling_velocity                   u:object_r:exported_system_prop:s0
+ro.min.fling_velocity                   u:object_r:exported_system_prop:s0
