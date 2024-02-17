@@ -24,8 +24,6 @@
 
 DEVICE_PATH := device/motorola/beckham
 
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
-
 # A/B updater
 AB_OTA_UPDATER := true
 
