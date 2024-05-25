@@ -162,7 +162,6 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/private \
     $(DEVICE_PATH)/sepolicy-mods/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy/public \
     $(DEVICE_PATH)/sepolicy-mods/public
 
 # Treble
