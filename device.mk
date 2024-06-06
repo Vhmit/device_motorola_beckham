@@ -280,6 +280,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# Kernel
+LOCAL_KERNEL := device/motorola/beckham-kernel/Image.gz-dtb
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
