@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/motorola/beckham
+KERNEL_PATH := device/motorola/beckham-kernel
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -85,8 +86,8 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_CONFIG := lineageos_beckham_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8998
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
