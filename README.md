@@ -1,5 +1,3 @@
-Copyright 2018 - The LineageOS Project
-
 Device configuration for Motorola Z3 Play (beckham)
 ==================================
 
