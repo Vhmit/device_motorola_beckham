@@ -242,6 +242,34 @@ on boot
     chown bluetooth bluetooth /sys/devices/platform/msm_serial_hs.0/clock
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
 
+service vendor.ppd /vendor/bin/mm-pp-dpps
+    class late_start
+    disabled
+    user system
+    socket pps stream 0660 system system
+    group system graphics
+
+on property:init.svc.vendor.hwcomposer-2-1=stopped
+    stop vendor.ppd
+
+on property:init.svc.vendor.hwcomposer-2-1=running
+    start vendor.ppd
+
+on property:init.svc.vendor.hwcomposer-2-1=restarting
+    stop vendor.ppd
+
+on property:init.svc.zygote=stopped
+    stop vendor.ppd
+
+on property:init.svc.zygote=running
+    start vendor.ppd
+
+on property:init.svc.zygote=restarting
+    stop vendor.ppd
+
+on property:init.svc.surfaceflinger=restarting
+    restart vendor.hwcomposer-2-1
+
     chmod 0660 /dev/ttyHS2
     chown bluetooth bluetooth /dev/ttyHS2
 
