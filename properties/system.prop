@@ -10,6 +10,8 @@ ro.charger.enable_suspend=true
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemservercompilerfilter=speed 
+dalvik.vm.systemuicompilerfilter=speed
 
 # Misc
 debug.force_no_blanking=true
