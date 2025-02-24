@@ -595,4 +595,12 @@
          running in WAL mode.
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode" translatable="false">OFF</string>
+
+    <!-- The package name for the system's translation service.
+     This service must be trusted, as it can be activated without explicit consent of the user.
+     If no service with the specified name exists on the device, translation wil be
+     disabled.
+     Example: "com.android.translation/.TranslationService"
+    -->
+    <string name="config_defaultTranslationService" translatable="false"></string>
 </resources>
