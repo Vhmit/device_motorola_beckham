@@ -14,17 +14,17 @@
 // limitations under the License.
 //
 
-motorola_sdm660_init_library_static {
-    name: "libinit_sdm660",
+motorola_beckham_init_library_static {
+    name: "libinit_beckham",
     recovery_available: true,
     srcs: [
-        "init_sdm660.cpp",
+        "init_beckham.cpp",
         "DeviceLibinit.cpp"
     ],
     include_dirs: [
         "system/libbase/include",
         "system/core/init",
-        "device/motorola/sdm660-common"
+        "device/motorola/beckham"
     ],
     shared_libs: [
         "libbase",

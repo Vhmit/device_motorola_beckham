@@ -124,6 +124,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -234,6 +243,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>com.motorola.mod</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+             <name>IModManager</name>
+             <instance>default</instance>
+         </interface>
+    </hal>
+    <hal format="hidl">
         <name>com.qualcomm.qti.imscmservice</name>
         <transport>hwbinder</transport>
         <version>2.2</version>
@@ -249,6 +267,24 @@
         <interface>
             <name>IUceService</name>
             <instance>com.qualcomm.qti.uceservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>motorola.hardware.audio.adspd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IADSP</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>motorola.hardware.health</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMotHealth</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">

@@ -1,4 +1,4 @@
-package sdm660
+package beckham
 
 import (
     "android/soong/android"

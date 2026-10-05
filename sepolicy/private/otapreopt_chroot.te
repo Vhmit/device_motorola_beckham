@@ -1,3 +1,0 @@
-# Needed so check_dynamic_partitions postinstall script
-# can be found on /product
-allow otapreopt_chroot system_file:dir { search mounton };

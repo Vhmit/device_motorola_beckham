@@ -7,6 +7,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.beckham.rc",
+    src: "etc/init.beckham.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.mmi.ramdump.rc",
     src: "etc/init.mmi.ramdump.rc",
     sub_dir: "init/hw",
@@ -44,6 +51,12 @@ prebuilt_etc {
 sh_binary {
     name: "init.class_main.sh",
     src: "bin/init.class_main.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.gbmods.sh",
+    src: "bin/init.gbmods.sh",
     soc_specific: true,
 }
 

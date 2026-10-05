@@ -1,5 +1,5 @@
 #
-# vendor props for sdm660
+# vendor props for beckham
 #
 
 # Audio
@@ -11,6 +11,13 @@ persist.vendor.audio.ras.enabled=false
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=8
 ro.vendor.audio.sdk.ssr=false
+persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Bluetooth_cal.acdb
+persist.vendor.audio.calfile1=/vendor/etc/acdbdata/General_cal.acdb
+persist.vendor.audio.calfile2=/vendor/etc/acdbdata/Global_cal.acdb
+persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Handset_cal.acdb
+persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb
+persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
+persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=false
@@ -79,6 +86,7 @@ vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
+bluetooth.device.default_name=Moto Z3 Play
 bluetooth.hardware.power.operating_voltage_mv=3300
 bluetooth.profile.a2dp.source.enabled?=true
 bluetooth.profile.asha.central.enabled?=true
@@ -123,6 +131,18 @@ debug.sf.predict_hwc_composition_strategy=0
 
 # Factory reset partition
 ro.frp.pst=/dev/block/platform/soc/c0c4000.sdhci/by-name/frp
+
+# Fluence
+persist.vendor.audio.dualmic.config=endfire
+persist.vendor.audio.fluence.audiorec=false
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+ro.vendor.audio.sdk.fluencetype=none
+
+# Mods
+sys.mod.platformsdkversion=281
 
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
@@ -183,6 +203,20 @@ ro.vendor.use_data_netmgrd=true
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 # Sensors
+ro.hardware.sensors=beckham
+ro.vendor.sensors.maghalcal=false
+ro.vendor.sensors.pmd=false
+ro.vendor.sensors.amd=false
+ro.vendor.sensors.rmd=false
+ro.vendor.sensors.scrn_ortn=false
+ro.vendor.sensors.pedometer=false
+ro.vendor.sensors.mot_ltv=true
+ro.vendor.sensors.facing=false
+ro.vendor.sensors.cmc=false
+ro.vendor.sensors.dev_ori=true
+ro.vendor.sensors.sta_detect=true
+ro.vendor.sensors.mot_detect=true
+ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.smd=false
 
 # SD Card Encryption
