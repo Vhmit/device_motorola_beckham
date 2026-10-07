@@ -8,15 +8,15 @@ use.voice.path.for.pcm.voip=false
 # Charger
 ro.charger.enable_suspend=true
 
+# Misc
+debug.force_no_blanking=true
+
+# Netflix
+ro.netflix.bsp_rev=Q660-13149-1
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=0
 ril.subscription.types=RUIM
 telephony.lteOnCdmaDevice=1
-
-# Misc
-debug.force_no_blanking=true
-
-# Netflix
-ro.netflix.bsp_rev=Q660-13149-1

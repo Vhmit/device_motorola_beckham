@@ -2,6 +2,11 @@
 # system_ext props for beckham
 #
 
+# Audio
+audio.offload.disable=false
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.profile.a2dp.source.enabled=true
@@ -18,13 +23,6 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
-
-# Audio
-audio.offload.disable=false
-ro.qc.sdk.audio.fluencetype=none
-ro.qc.sdk.audio.ssr=false
-
-# Bluetooth
 bt.max.hfpclient.connections=1
 ro.bluetooth.a4wp=false
 vendor.bluetooth.soc=cherokee
