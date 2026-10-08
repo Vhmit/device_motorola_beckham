@@ -16,12 +16,8 @@
 */
 -->
 <resources>
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">15dp</dimen>
-
-    <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">10dp</dimen>
-
-    <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">0dp</dimen>
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height">105.0px</dimen>
+    <dimen name="status_bar_height_landscape">14.0dp</dimen>
+    <dimen name="status_bar_height_portrait">105.0px</dimen>
 </resources>
