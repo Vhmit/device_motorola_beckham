@@ -148,6 +148,9 @@ persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=none
 
+# FM
+ro.vendor.fm.use_audio_session=true
+
 # Mods
 sys.mod.platformsdkversion=281
 
