@@ -234,22 +234,23 @@ PRODUCT_PACKAGES += \
     init.beckham.rc \
     init.mmi.ramdump.rc \
     init.mmi.usb.rc \
-    init.mmi.usb.sh \
-    init.qcom.rc \
     init.moto.rc \
     init.power.rc \
+    init.qcom.rc \
+    init.sys.beckham.rc \
+    ueventd.qcom.rc \
+    init.recovery.qcom.rc
+
+PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.gbmods.sh \
+    init.mmi.usb.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qti.qseecomd.sh \
-    ueventd.qcom.rc \
     wlan_carrier_bin.sh
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.sys.beckham.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.beckham.rc
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -380,10 +381,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libprotobuf-cpp-full
-
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
 # RIL
 PRODUCT_PACKAGES += \
