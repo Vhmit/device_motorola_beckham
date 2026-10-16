@@ -12,15 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from beckham device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+
+TARGET_NOT_USES_BLUR := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Define boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifiers
 PRODUCT_DEVICE := beckham
-PRODUCT_NAME := lineage_beckham
+PRODUCT_NAME := derp_beckham
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto Z3 Play
 PRODUCT_MANUFACTURER := Motorola

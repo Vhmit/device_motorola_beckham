@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_beckham.mk
+    $(LOCAL_DIR)/derp_beckham.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_beckham-eng \
-    lineage_beckham-user \
-    lineage_beckham-userdebug
+    derp_beckham-eng \
+    derp_beckham-user \
+    derp_beckham-userdebug
