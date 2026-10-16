@@ -103,7 +103,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    Aperture \
     camera.device@3.2-impl \
     libbson.vendor \
     libxml2 \
