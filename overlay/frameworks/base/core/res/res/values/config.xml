@@ -543,6 +543,7 @@
         <item>org.codeaurora.snapcam</item>
         <item>org.lineageos.aperture</item>
         <item>org.lineageos.aperture.dev</item>
+        <item>org.derpfest.flash</item>
     </string-array>
 
     <!-- Flag indicating whether notification and ringtone volumes
