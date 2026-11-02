@@ -729,11 +729,11 @@ vendor/lib64/libsensor_reg.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.rp.so
 
-# Thermal
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+# Thermal - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+vendor/bin/thermal-engine|6ee391c0b9f8d4ceea57521f584b75c60d2ffa09
+-vendor/lib/libthermalclient.so|b2d69a3a3589eb0387c2f13cc10ff91072c27c9a
+-vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
+vendor/lib64/libthermalfeature.so|a1d99d33946d99ca620c6f5a8f4759d600a89086
 
 # Time services
 vendor/app/TimeService/TimeService.apk
