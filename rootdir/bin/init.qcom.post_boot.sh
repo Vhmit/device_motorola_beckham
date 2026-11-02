@@ -1715,13 +1715,6 @@ case "$target" in
                 # Enable timer migration to little cluster
                 echo 1 > /proc/sys/kernel/power_aware_timer_migration
 
-                case "$soc_id" in
-                        "277" | "278")
-                        # Start energy-awareness for 8976
-                        start energy-awareness
-                ;;
-                esac
-
                 #enable sched colocation and colocation inheritance
                 echo 130 > /proc/sys/kernel/sched_grp_upmigrate
                 echo 110 > /proc/sys/kernel/sched_grp_downmigrate
@@ -4350,8 +4343,6 @@ case "$target" in
 		echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 	fi
 	echo N > /sys/module/lpm_levels/parameters/sleep_disabled
-        # Starting io prefetcher service
-        start iop
 
         # Set Memory parameters
         configure_memory_parameters
@@ -5178,7 +5169,6 @@ case "$target" in
 	echo 5 > /proc/sys/kernel/sched_spill_nr_run
 	echo 1 > /proc/sys/kernel/sched_restrict_cluster_spill
         echo 1 > /proc/sys/kernel/sched_prefer_sync_wakee_to_waker
-	start iop
 
         # disable thermal bcl hotplug to switch governor
         echo 0 > /sys/module/msm_thermal/core_control/enabled
