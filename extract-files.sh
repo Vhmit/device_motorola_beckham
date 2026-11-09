@@ -63,13 +63,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
             sed -i "s/system input/system uhid input/" "${2}"
             ;;
-        # Add input group for adspd service
-        vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc)
-            sed -i "s/media/media input/" "${2}"
-            ;;
         # Replace libcutils with libprocessgroup
         vendor/lib/hw/audio.primary.sdm660.so)
             "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         # Fix xml version
         product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml | product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
@@ -112,7 +109,10 @@ function blob_fixup() {
             done
             ;;
         # Use VNDK 32 libutils
-        vendor/lib/hw/audio.primary.sdm660.so | vendor/lib/libaudioroute.so | vendor/lib/libmotaudioutils.so | vendor/lib/libsensorndkbridge.so |vendor/lib/libtinyalsa.so | vendor/lib/libtinycompress.so | vendor/lib/libtinycompress_vendor.so |vendor/lib/libunshorten.so | vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/soundfx/libmmieffectswrapper.so)
+        vendor/lib/libaudioroute.so | vendor/lib/libmotaudioutils.so | vendor/lib/libsensorndkbridge.so | vendor/lib/libtinycompress.so | vendor/lib/libtinycompress_vendor.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
+        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/soundfx/libmmieffectswrapper.so | vendor/lib/libeqservicebridge.so | vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
     esac

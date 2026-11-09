@@ -10,33 +10,21 @@ system/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
 system/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
 system/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 
-# Audio (ADSPD)
-vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
-vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc|05bba91c1cb432fbaaf89c28b51b276c189e05e9
-vendor/lib/hw/audio.motvr.default.so
-vendor/lib/hw/sound_trigger.primary.default.so
-vendor/lib/libadspd.so
-vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
-vendor/lib/motorola.hardware.audio.adspd@1.0.so
-vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
-vendor/lib64/libadspd.so
-vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
-vendor/lib64/motorola.hardware.audio.adspd@1.0.so
-
 # Audio (Prebuilt)
-vendor/lib/hw/audio.primary.sdm660.so|461252fc0615d8f1bcde6db584decb1be14198f1
-vendor/lib/libaudioroute.so|8b2586eaa5f6e53fcf03e8249db66e311d1b074a
-vendor/lib/libmotaudioutils.so|83cfc4dfa9f5dde6921a26ddf81404ae01cba5f9
-vendor/lib/libsensorndkbridge.so|d44d2837bf1863d78bc9bcdbca2f0c1310273066
-vendor/lib/libtinyalsa.so|2368cbbc025af83208c4abc7fabf66c967edceb6
-vendor/lib/libtinycompress.so|da2ebaa7eb5dddb8a22511e1269f4e688fbcb478
-vendor/lib/libtinycompress_vendor.so|434c2594351dfb376509b25e28aa3bdf2241c9b5
-vendor/lib/libunshorten.so|19ae3fbe698b36c10b57877ef3a8e1c0d6a5aa15
-vendor/lib64/libtinyalsa.so
-vendor/lib64/libtinycompress.so
+vendor/lib/hw/audio.primary.sdm660.so|dd7b4fd79f165f473c5b4e89d218f312907e705e
+vendor/lib/libaudioroute.so|97adf76866669cf26fa3c2a27c185250ab85c3be
+vendor/lib/libmotaudioutils.so|7b50c16d5af26b258497709ed106a08fe0daebd8
+vendor/lib/libsensorndkbridge.so|b0881a4d03f14f3ffa651251af17b3090170c07a
+vendor/lib/libtinyalsa.so
+vendor/lib/libtinycompress.so|9cdfb51716b48f4d4171fa567d969db710c14f56
+vendor/lib/libtinycompress_vendor.so|19bde39faa2505ddc92fb93970ae5fbedcd0b5bf
+vendor/lib/libunshorten.so
 
 # Audio (Soundfx)
-vendor/lib/soundfx/libmmieffectswrapper.so|f096ca603a99c626a1c5477f5231c4d5d7e83688
+vendor/lib/soundfx/libmmieffectswrapper.so|c147eb6a2df1357838ad0110168978dd303ef493
+vendor/lib/soundfx/libspeakerbundle.so|0bb365c909c00b75752f6765c696c4e93ea37312
+vendor/lib/libeqservicebridge.so|d53e0e4a745f3bc41a3f52074ba7a08ead7692f1
+vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so|5796c07e5458c9c93a00b21f799cade8d27c794c
 
 # Camera
 -system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
