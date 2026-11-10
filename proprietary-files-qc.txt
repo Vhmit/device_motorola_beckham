@@ -421,11 +421,6 @@ vendor/bin/charge_only_mode|0ba9713157beb424eef3e9af721374e18c88bd89
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|3b972dc987838eb2fda1f9ed694fe6ab5e498330
 vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/etc/perf/commonresourceconfigs.xml|c80efdafc6c5ef4fe0602f4ffe3137092513db38
-vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
-vendor/etc/perf/perfboostsconfig.xml|17fb67ef843aaebe07903bec13dc0555c10612fa
-vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
-vendor/etc/perf/targetresourceconfigs.xml|c1e64eae221f714bc5bf97e83c69c37352311fab
 vendor/lib/libperfconfig.so|a7927edfdddafe90ea53bede0629ebc8a686152d
 vendor/lib/libperfgluelayer.so|8cc20a3ddf15d795ed024ac7c5c0a77888026d9f
 vendor/lib/libqti-perfd-client.so|9a2550b2ea07e885a51c8bb8c5a5b2263d09cf64
