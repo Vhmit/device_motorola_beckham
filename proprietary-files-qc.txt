@@ -348,9 +348,6 @@ vendor/lib64/libhdr_tm.so
 # IPA
 vendor/bin/ipacm-diag
 
-# IRQ balance - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
-
 # Listen
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
@@ -420,44 +417,21 @@ vendor/lib64/libsensorndkbridge.so
 # Offline charging - from nash_retail (PPX29.159-24)
 vendor/bin/charge_only_mode|0ba9713157beb424eef3e9af721374e18c88bd89
 
-# Perf
-system/lib/libqti-perfd-client_system.so
-system/lib/libqti_performance.so
-system/lib64/libqti-perfd-client_system.so
-system/lib64/libqti_performance.so
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/bin/energy-awareness
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-
-# Perf - IOP
-product/lib/vendor.qti.hardware.iop@1.0.so
-product/lib/vendor.qti.hardware.iop@2.0.so
-product/lib64/vendor.qti.hardware.iop@1.0.so
-product/lib64/vendor.qti.hardware.iop@2.0.so
-system/lib/libqti-iopd-client_system.so
-system/lib/libqti-util_system.so
-system/lib64/libqti-iopd-client_system.so
-system/lib64/libqti-util_system.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
+# Perf - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/hw/vendor.qti.hardware.perf@2.1-service|2e3be88cad2d9b9aa4edc8e68ad5f4d4e7eeaedc
+vendor/bin/energy-awareness|d30082c491a02582ee281fe7fe9e71eba9708858
+vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
+vendor/etc/init/vendor.qti.hardware.perf@2.1-service.rc|0d7eaa2a99b16738f4e40d7ee7473bb0dd705d2c
+vendor/lib/libperfconfig.so|f4ee23ed7fdcdf4729d268d2f30baac97c0c2bf9
+vendor/lib/libperfgluelayer.so|41dc533f2cb59a933601a7af1460f50cc548fb58
+vendor/lib/libqti-perfd-client.so|b97271d03ec5aab93125c750181c6ff03d136221
+vendor/lib/libqti-perfd.so|3437b3e22042f6d7db43d91df56107007073d3b3
+vendor/lib/libqti-util.so|b9610a3448b53d007965e1572a0d6c65414052ff
+vendor/lib64/libperfconfig.so|45d5344603d76d4d0b7f27bdd4ea07ac525656de
+vendor/lib64/libperfgluelayer.so|06f15511aa43ea3ebfff624e425952dcb7577701
+vendor/lib64/libqti-perfd-client.so|660d1d2a58e10616971c807b638f95b139b5a8e0
+vendor/lib64/libqti-perfd.so|003d9c728a25a50535fe7a77c3616b4079761166
+vendor/lib64/libqti-util.so|45a80be449435d277f09cc59e4a315fa86072c41
 
 # Peripheral manager
 vendor/bin/pm-proxy
