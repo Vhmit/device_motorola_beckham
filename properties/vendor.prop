@@ -136,6 +136,9 @@ vendor.gralloc.enable_fb_ubwc=1
 vendor.gralloc.disable_ahardware_buffer=1
 debug.sf.predict_hwc_composition_strategy=0
 
+# DRM
+drm.service.enabled=true
+
 # Factory reset partition
 ro.frp.pst=/dev/block/platform/soc/c0c4000.sdhci/by-name/frp
 

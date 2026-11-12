@@ -142,15 +142,36 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8a
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|6d82db4f225b2256f803b30d181173de1964beca
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|841104a6d894f2afb733bb2317b70092298a8537
 
-# DRM - HDCP
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib64/libmm-hdcpmgr.so
+# DRM - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/bin/qseecomd|a673f923a343a98007410022c1dc9acb5d440889
+vendor/lib64/libGPreqcancel.so|e402b6dd242031af4e67d9d46f1ec72ff0ed35d3
+vendor/lib64/libGPreqcancel_svc.so|bc624c099d38be6c43cfd3906d3aea5e17f62e43
+vendor/lib64/libQSEEComAPI.so|47e23f5502117f43f0a4e4802a3b613ef6ab903d
+vendor/lib64/libSecureUILib.so|3dc8c37825362fa68f89757b3420cb04be02f769
+vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
+vendor/lib64/libdrmfs.so|bcef4609a8af2fdf4fe5fd9b89e43018932fe95b
+vendor/lib64/libdrmtime.so|620d9e41f915ffc04afc635f4d080eff56543c65
+vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
+vendor/lib64/librpmb.so|6ee3ac316f28cf01ad1e01c8074209d294a298fa
+vendor/lib64/libsecureui.so|65f24fb26da7f0bfd507c04e9efb278a4cdd8c20
+vendor/lib64/libsecureui_svcsock.so|e364290497862270cd01d9be84f0141ea92e92f9
+vendor/lib64/libssd.so|d6758bd01b360be7bb68f35f56978a5e9a21d3c3
 
-# DRM - Qualcomm Trusted Execution Enviornment
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# DRM (HDCP) - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/lib/libmm-hdcpmgr.so|1369ce85b3c133c8d4d04167cd894df85212dcfa
+vendor/lib64/libmm-hdcpmgr.so|a80b3cfa28acdb69a5047ab9592c611ab4534799
+
+# DRM (Qualcomm Trusted Execution Enviroment) - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|03375bfa75e917a91ebca43975c3b461f242dace
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|57707e6f61b289e43a503cdef1db221c766d3f57
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|50ee00e9ecf66258efbc544492982af16b5c91d6
+
+# DRM (TUI) - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|d4d025e0a12af87f65104fe07801517938733603
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|a917bd71ccfdbdd89e26704a230c7c148d3cc4b5
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|1ac676dca4c81094b254b62f1b608e471b385847
 
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine

@@ -393,20 +393,8 @@ vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml
 
 # DRM
-vendor/bin/qseecomd
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libcppf.so
 vendor/lib/liboemcrypto.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
 vendor/lib64/liboemcrypto.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
