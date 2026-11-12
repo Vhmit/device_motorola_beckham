@@ -133,6 +133,7 @@ $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0 \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
@@ -144,6 +145,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system \
     libvulkan \
     libtinyxml
